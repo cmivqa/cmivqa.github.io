@@ -74,22 +74,25 @@
                         Recently, the availability of online videos has revolutionized the way to access information or gain knowledge [1]-[2]. Many people find instructional videos to be an effective and efficient way to teach or learn how to accomplish a particular task with a series of step-by-step procedures [3]-[4]. To this end, a new task temporal answer grounding in the Chinese Medical instructional video (TAGV) is proposed to find the video frame span corresponding to an input question. The datasets of the task are collected from high-quality Chinese medical instructional channels on the YouTube website, which are manually annotated by medical experts. The ultimate goal for this shared task is to develop a system that can provide temporal answer video segments for the first-aid, medical emergency, or medical education.
                     </p>
                     <p class="card-text">This shared task includes three tracks: Temporal Answer Grounding in Singe Video (TAGSV), Video Corpus Retrieval (VCR) and Temporal Answer Grounding in Video Corpus (TAGVC).
-                    <ul>
+
                     <center><img src="./img_cmivqa/track1.png" width=90%></center>
                     <div>
 <center><h6><br>Fig. 1: Illustration of Temporal Answer Grounding in Singe Video (TAGSV). </h6></center>
+                        <ul>
 </div>
                         <li ><b>Track 1. Temporal Answer Grounding in Singe Video (TAGSV):</b> As shown in Fig. 1: given a medical or health-related question and a single untrimmed Chinese medical instructional video, this track aims to locate the temporal answer (start and end time points) within the video.</li><!--li>Given the identity and audio signals of the speaker, participants are challenged to develop an algorithm to generate a video that can match the audio signals.</li-->
-
+                </ul>
                     <center><img src="./img_cmivqa/track2.png" width=90% style="margin-top: 15px"></center>
                     <div>
 <center><h6><br>Fig. 2: Illustration of Video Corpus Retrieval (VCR). </h6></center>
 </div>
+                    <ul>
                     <li><b>Track 2. Video Corpus Retrieval (VCR):</b> As shown in Fig. 2, given a medical or health-related question and a large collection of untrimmed Chinese medical instructional videos, this track aims to find the most relevant video corresponding to the given question in the video corpus.</li><!--li>Given the identity of the listener, and a corresponding talking head video & audio, participants are challenged to develop an algorithm to generate a video that can respond to the speaker's behaviors actively in real-time.</li-->
-                   <center> <img src="./img_cmivqa/track3.png" width=90% style="margin-top: 15px"></center>
+                   </ul>
+                        <center> <img src="./img_cmivqa/track3.png" width=90% style="margin-top: 15px"></center>
                     <div>
 <center><h6><br>Fig. 3: Illustration of Temporal Answer Grounding in Video Corpus (TAGVC).</h6></center>
-
+<ul>
                     <li><b>Track 3. Temporal Answer Grounding in Video Corpus (TAGVC):</b> As shown in Fig. 3, given a text question and a large collection of untrimmed Chinese medical instructional videos, this track aims at finding the matching video answer span within the most relevant video corresponding to the given question in the video corpus.</li><!--li>Given the identity and audio signals of the speaker, participants are challenged to develop an algorithm to generate a video that can match the audio signals.</li-->
                 </ul>
                     </p>
@@ -116,10 +119,10 @@
                         </div>
                     </div>
                                         <div>
-                    <center><img src="./img_cmivqa/pic4.png" width=70% style="margin-top: 15px"></center>
+                    <center><img src="./img_cmivqa/pic4.png" width=80% style="margin-top: 15px"></center>
                                                                 </div>
                     <div>
-<center><h6><br>Fig. 3: Illustration of Temporal Answer Grounding in Video Corpus (TAGVC).</h6></center>
+<center><h6><br>Fig. 4 Dataset examples of the TAGV shared task..</h6></center>
                     <p class="card-text">
                     The videos for this competition are crawled from the Chinese medical instructional channels on the YouTube website, where the subtitles (in Chinese) are transcribed from the corresponding video. The frames from the videos have been down-sampled to 16fps. The question and corresponding temporal answer are manually labeled by annotators with the medical background. Each video may contain several question-answer pairs, where each question corresponds to a unique answer. The dataset is split into a training set, a validation set, and a test set. During the competition, the test set along with the true “id” data number is not available to the public. The Fig. 4 shows the dataset examples for the TAGV shared task. The “id” is the sample number which is used for the video retrieval track. The “video_id” means the unique ID from YouTube. The “question” item is written manually by the medical experts. The “start and end second” represent the temporal answer from the corresponding video. As a result, our final goal is to retrieve the target video ID from the test corpus, and then locate the visual answer. More details about the dataset as well as the download links can be found in
                     <a href="https://github.com/cmivqa/NLPCC-2023-Shared-Task-5">https://github.com/cmivqa/NLPCC-2023-Shared-Task-5</a>.
@@ -439,23 +442,23 @@
                       </div>
                     <div class="row">
                         <div class="col orgnizer-box">
-                            <img src="./img_cmivqa/libin.png" class="rounded-circle orgnizer-img" width=60%/>
+                            <img src="./img_cmivqa/libin.png" class="rounded-circle orgnizer-img" width=100/>
                             <p class="orgnizer-text">Bin Li<br>College of Electrical and Information Engineering, Hunan University</p>
                         </div>
                         <div class="col orgnizer-box">
-                            <img src="./img_cmivqa/yixuan.jpg" class="rounded-circle orgnizer-img" width=60%/>
+                            <img src="./img_cmivqa/yixuan.jpg" class="rounded-circle orgnizer-img" width=100/>
                             <p class="orgnizer-text">Yixuan Weng<br>National Laboratory of Pattern Recognition Institute of Automation, CAS</p>
                         </div>
                         <div class="col orgnizer-box">
-                            <img src="./img_cmivqa/guohu.jpg" class="rounded-circle orgnizer-img" width=60%/>
+                            <img src="./img_cmivqa/guohu.jpg" class="rounded-circle orgnizer-img" width=100/>
                             <p class="orgnizer-text">Hu Guo<br>College of Electrical and Information Engineering, Hunan University</p>
                         </div>
                         <div class="col orgnizer-box">
-                            <img src="./img_cmivqa/sunbin.jpg" class="rounded-circle orgnizer-img" width=60%/>
+                            <img src="./img_cmivqa/sunbin.jpg" class="rounded-circle orgnizer-img" width=100/>
                             <p class="orgnizer-text">Bin Sun<br>College of Electrical and Information Engineering, Hunan University</p>
                         </div>
                         <div class="col orgnizer-box">
-                            <img src="./img_cmivqa/li.jpg" class="rounded-circle orgnizer-img" width=60%/>
+                            <img src="./img_cmivqa/li.jpg" class="rounded-circle orgnizer-img" width=100/>
                             <p class="orgnizer-text">Shutao Li<br>College of Electrical and Information Engineering, Hunan University</p>
 <!--                        </div>-->
 <!--                        <div class="col orgnizer-box">-->
