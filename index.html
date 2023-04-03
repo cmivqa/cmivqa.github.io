@@ -125,7 +125,7 @@
                     <div>
 <center><h6><br>Fig. 4 Dataset examples of the TAGV shared task.</h6></center>
                     <p class="card-text">
-                    The videos for this competition are crawled from the Chinese medical instructional channels on the YouTube website, where the subtitles (in Chinese) are transcribed from the corresponding video. The frames from the videos have been down-sampled to 16fps. The question and corresponding temporal answer are manually labeled by annotators with the medical background. Each video may contain several question-answer pairs, where each question corresponds to a unique answer. The dataset is split into a training set, a validation set, and a test set. During the competition, the test set along with the true “id” data number is not available to the public. The Fig. 4 shows the dataset examples for the TAGV shared task. The “id” is the sample number which is used for the video retrieval track. The “video_id” means the unique ID from YouTube. The “question” item is written manually by the medical experts. The “start and end second” represent the temporal answer from the corresponding video. As a result, our final goal is to retrieve the target video ID from the test corpus, and then locate the visual answer. More details about the dataset as well as the download links can be found in
+                    The videos for this competition are crawled from the Chinese medical instructional channels on the YouTube website, where the subtitles (in Chinese) are transcribed from the corresponding video. The question and corresponding temporal answer are manually labeled by annotators with the medical background. Each video may contain several question-answer pairs, where each question corresponds to a unique answer. The dataset is split into a training set, a validation set, and a test set. During the competition, the test set along with the true “id” data number is not available to the public. The Fig. 4 shows the dataset examples for the TAGV shared task. The “id” is the sample number which is used for the video retrieval track. The “video_id” means the unique ID from YouTube. The “question” item is written manually by the medical experts. The “start and end second” represent the temporal answer from the corresponding video. As a result, our final goal is to retrieve the target video ID from the test corpus, and then locate the visual answer. More details about the dataset as well as the download links can be found in
                     <a href="https://github.com/cmivqa/NLPCC-2023-Shared-Task-5">https://github.com/cmivqa/NLPCC-2023-Shared-Task-5</a>.
                    </p>
 <!--                    <p>-->
@@ -203,9 +203,56 @@
                     </div>
                     <p class="card-text">
 <!--                        <strong>Train+Valid+Test Set:</strong> <a href="https://1drv.ms/u/s!Ag220j2nXkVswCSUXjTP_cA3Y0y2?e=9b3VXA" target="_blank">OneDrive</a><br/>-->
-                        <strong>Train & Validation Set:</strong> <a> To be published around april 4th</a><br/>
-<!--                        <strong>Validation Set:</strong> <a> To be published around May 20th</a><br/>-->
-                        <strong>Test Set:</strong> <a>To be published around May 20th</a><br/>
+                        <strong>Train & Validation Set:</strong> <a href="https://pan.baidu.com/s/1VRJZaQyGn5PbyGt0yVo1Gg?pwd=9874">BaiduNetDisk</a> | <a href="https://drive.google.com/drive/folders/1QbY8DEaVLkY2w6vOCWAs4ZQFHgJ3q8ui?usp=sharing">GoogleDrive</a><br/>
+                        <strong>Test Set A:</strong> <a>To be published around April 10th</a><br/>
+                    <strong>Test Set B:</strong> <a>To be published around May 21th</a><br/>
+
+                    <h5>Statistics</h5>
+                    <center>
+                   <table class="table table-striped table-bordered" style="text-align: center">
+                        <tbody>
+                              <tr>
+                            <td>Dataset</td>
+                            <td>Videos</td>
+                            <td>QA pairs</td>
+                            <td>Vocab Nums</td>
+                            <td>Question Avg. Len.</td>
+                            <td>Video Avg. Len.</td>
+                        </tr>
+                        <tr>
+                            <td>Train &amp; Dev</td>
+                            <td>1,228</td>
+                            <td>2,937</td>
+                            <td>3,125</td>
+                            <td>17.16</td>
+                            <td>263.3</td>
+                        </tr>
+                        <tr>
+                            <td>Test A (Released around April 10th)</td>
+                            <td>200</td>
+                            <td>492</td>
+                            <td>2,171</td>
+                            <td>17.81</td>
+                            <td>242.4</td>
+                        </tr>
+                        <tr>
+                            <td>Test B (Released around May 18th)</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+            </table>
+                    </center>
+                    <h5>Details</h5>
+                    All the Train & Dev files include videos, audio, and the corresponding subtitles. The video and the corresponding audio come from Youtube Chinese medical channel,
+                    which is obtained by using <a href="https://github.com/pytube">Pytube</a> tools. The subtitle are generated from the <a href="https://github.com/openai/whisper">Whisper</a>, which contains Simplified Chinese and Traditional Chinese tokens.
+                    In order to unify the character types of questions and subtitles, we converted the above both into simplified Chinese. As for competition benchmarks, we recommend references [<a href="#ref1">1</a>-<a href="#ref2">2</a>], [<a href="#ref6">6</a>] as strong baselines. Beginners can quickly learn about the content of relevant competitions through references [<a href="#ref3">3</a>-<a href="#ref4">4</a>].
+                    We will provide the baseline and the Test A daset soon, any original methods (language/vision/audio/mutlimodal etc.) are welcome.
+
+                        <!--                        <strong>Validation Set:</strong> <a> To be published around May 20th</a><br/>-->
 <!--                        <em>Note: For Train Set, data in <code>listening_head.zip</code> contains the data in <code>talking_head.zip</code>.</em><br/>-->
 <!--                        <u><strong><em>**Note:</em></strong></u> Except for the driver part, all other parts (e.g. render) can use additional data, but teams need to declare the pretrained model or additional data used when submission. For example, the use of a Talking Head Generation data is not allowed, but the use of pretrained data / model to adjust the render is allowed.-->
                     </p>
@@ -392,19 +439,23 @@
                           </tr>
                           <tr>
                             <td>Release of detailed task guidelines & training data</td>
-                            <td>April 6, 2023</td>
+                            <td>April 3, 2023</td>
+                          </tr>
+                          <tr>
+                            <td>Release of Test A data</td>
+                            <td>April 10, 2023</td>
                           </tr>
                           <tr>
                             <td>Registration deadline</td>
                             <td>May 5, 2023</td>
                           </tr>
                           <tr>
-                            <td>Release of test data</td>
+                            <td>Release of test B data</td>
                             <td>May 21, 2023</td>
                           </tr>
                           <tr>
-                            <td>Participants' results submission deadline</td>
-                            <td>May 31, 2023</td>
+                            <td>Participants’ final result submission (Test B) deadline:</td>
+                            <td>May 28, 2023</td>
                           </tr>
                           <tr>
                             <td>Evaluation results release and call for system reports and conference paper</td>
@@ -465,7 +516,7 @@
                             <p class="orgnizer-text">Bin Li<br>College of Electrical and Information Engineering, Hunan University</p>
                         </div>
                         <div class="col orgnizer-box">
-                            <img src="./img_cmivqa/yixuan.jpg" class="rounded-circle orgnizer-img" width=100/>
+                            <img src="./img_cmivqa/yixuan.jpg" class="rounded-circle orgnizer-img" width=95/>
                             <p class="orgnizer-text">Yixuan Weng<br>National Laboratory of Pattern Recognition Institute of Automation, CAS</p>
                         </div>
                         <div class="col orgnizer-box">
