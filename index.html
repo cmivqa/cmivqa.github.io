@@ -376,7 +376,7 @@
                          We will evaluate the results using the metric calculation equation shown as follows. Specifically, we use (1) Intersection over Union (IoU), and (2) mIoU which is the average IoU over all testing samples. Following the previous work [3]-[5], we adopt “R@n, IoU = μ”, and “mIoU” as the evaluation metrics, which treat localization of the frames in the video as a span prediction task. The “R@n, IoU = μ” denotes the Intersection over Union (IoU) of the predicted temporal answer span compared with the ground truth span, where the overlapping part is larger than “μ” in top-n retrieved moments. The “mIoU” is the average IoU over the samples. In our experiments, we use n = 1 and μ ∈ {0.3, 0.5, 0.7} to evaluate the TAGSV results.                      $$
                     \begin{aligned}
                      \mathrm{IOU} & =\frac{A \cap B}{A \cup B}  \\
-                    \mathrm{mIOU} & =\left(\sum_{i=1}^n \mathrm{IOU}\right) / N
+                    \mathrm{mIOU} & =\left(\sum_{i=1}^N \mathrm{IOU}\right) / N
                     \end{aligned}
                     $$
                     where A and B represent different spans, <i>N</i> = 3.<br/>
