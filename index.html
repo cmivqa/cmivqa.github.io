@@ -397,14 +397,14 @@
                     </li>                    </ul>
                     <h5><b>Track 3</b></h5>
                      <ul><li><b>Temporal Answer Grounding in Video Corpus:</b><br/>
-                         We kept the Intersection over Union (IoU) metric similar to the Track 1 and the retrieval indexes “R@n, n=1/10/50” and MRR similar to Track 2 for further analysis. The “R@n, IoU = 0.3/0.5/0.7” is still used, where we assign the n = 1, 10, 100 for evaluation. The index of mean IoU in video retrieval subtask, i.e., “R@1/10/50|mIOU”, is also adopted for measuring the average level of participating model’s performance.
+                         We kept the Intersection over Union (IoU) metric similar to the Track 1 and the retrieval indexes “R@n, n=1/10/50” and MRR similar to Track 2 for further analysis. The “R@n, IoU = 0.3/0.5/0.7” is still used, where we assign the n = 1, 10, 50 for evaluation. The index of mean IoU in video retrieval subtask, i.e., “R@1/10/50|mIOU”, is also adopted for measuring the average level of participating model’s performance.
 
-                    <br/><b>Note:</b> The main ranking of this track is based on the Average score. The Average score is calculated by averaging the R@1|mIoU, R@10|mIoU, R@100|mIoU scores, which is shown as follows.
+                    <br/><b>Note:</b> The main ranking of this track is based on the Average score. The Average score is calculated by averaging the R@1|mIoU, R@10|mIoU, R@50|mIoU scores, which is shown as follows.
                     where A and B represent different spans.<br/>
                      $$
                     \text { Average }=\frac{1}{|M'|} \sum_{i=1}^{|M'|} \frac{1}{\text { Value}_i}
                     $$
-                         where the |<i>M</i><sup>'</sup>| is the number of the evaluation metrics. Value<sub>i</sub> is the value of the i-th metric (i.e., R@1|mIoU, R@10|mIoU, R@100|mIoU), |<i>M</i><sup>'</sup>|=3.
+                         where the |<i>M</i><sup>'</sup>| is the number of the evaluation metrics. Value<sub>i</sub> is the value of the i-th metric (i.e., R@1|mIoU, R@10|mIoU, R@50|mIoU), |<i>M</i><sup>'</sup>|=3.
 <!--                            <li><strong>generation quality (image level)</strong>: SSIM, CPBD, PSNR</li>-->
 <!--                            <li><strong>generation quality (feature level)</strong>: FID</li>-->
 <!--                            <li><strong>identity preserving</strong>: Cosine Similarity (Arcface)</li>-->
