@@ -29,7 +29,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-        <div class="container"><a href="/" class="navbar-brand">CMIVQA</a>
+        <div class="container"><a href="/" class="navbar-brand">MMIVQA</a>
             <ul class="navbar-nav mr-auto order-1">
                 <li class="nav-item"><a class="nav-link" href="#challenge">Overview</a></li>
                 <li class="nav-item"><a class="nav-link" href="#dataset">Dataset</a></li>
@@ -57,7 +57,7 @@
             <div class="title-text-box">
                  <h1 class="display-4 text-bold">MMIVQA</h1>
                 <h2 class="display-5 text-bold">Multilingual Medical Instructional Video Question Answering Challenge</h2>
-                <h5 class="text-regular">held in ACM MULTIMEDIA 2024</h5>
+                <h5 class="text-regular">May held in ACM MULTIMEDIA 2024</h5>
             </div>
             <a class="btn" id="learn-more-btn" href="#challenge" role="button">Learn more</a>
             <a class="btn" id="download-btn" href="#downloads" role="button">Download dataset</a>
@@ -74,29 +74,29 @@
                         </div>
                       </div>
                     <p class="card-text">
-                        Recently, the availability of online videos has revolutionized the way to access information or gain knowledge [1]-[2]. Many people find instructional videos to be an effective and efficient way to teach or learn how to accomplish a particular task with a series of step-by-step procedures [3]-[4]. To this end, a new task temporal answer grounding in the Chinese Medical instructional video (TAGV) is proposed to find the video frame span corresponding to an input question. The datasets of the task are collected from high-quality Chinese medical instructional channels on the YouTube website, which are manually annotated by medical experts. The ultimate goal for this shared task is to develop a system that can provide temporal answer video segments for the first-aid, medical emergency, or medical education.
+                        Recently, the advent of online videos has revolutionized the way in which information or knowledge is obtained [1]. Many people find instructional videos an effective and efficient way to teach or learn how to complete a specific task through a series of step-by-step procedures [2]. In this context, a new task called Temporal Answering Grounding in Video (TAGV) is proposed to find the video frame span (visual answer) corresponding to the input question. However, current TAGV dataset was created for a single language (i.e., English or Chinese), it is also important to include the development of multilingual applications. To promote research on TAGV, we propose the Multilingual Medical Instructional Video Question Answering (MMIVQA) challenge. The datasets for this challenge contain high-quality Chinese and English medical instructional videos, with manual annotations provided by medical experts. The MMIVQA challenge includes three tracks, namely Track 1, Multilingual Temporal Answering Grounding in Single Video (mTAGSV), Track 2 Multilingual Video Corpus Retrieval, mVCR) and multilingual Temporal Answering Grounding in Video Corpus (mTAGVC). The ultimate goal of this joint task is to develop a system that can provide multilingual Q&A function with moment-to-moment video clips for first aid, medical emergencies or medical education.
                     </p>
-                    <p class="card-text">This shared task includes three tracks: Temporal Answer Grounding in Singe Video (TAGSV), Video Corpus Retrieval (VCR) and Temporal Answer Grounding in Video Corpus (TAGVC).
+                    <p class="card-text">This shared task includes three tracks: Multilingual Temporal Answer Grounding in Singe Video (mTAGSV), Multilingual Video Corpus Retrieval (mVCR) and Multilingual Temporal Answer Grounding in Video Corpus (mTAGVC).
 
                     <center><img src="./img_cmivqa/track1.png" width=90%></center>
                     <div>
-<center><h6><br>Fig. 1: Illustration of Temporal Answer Grounding in Singe Video (TAGSV). </h6></center>
+<center><h6><br>Fig. 1: Illustration of Multilingual Temporal Answer Grounding in Singe Video (mTAGSV). </h6></center>
                         <ul>
 </div>
-                        <li ><b>Track 1. Temporal Answer Grounding in Singe Video (TAGSV):</b> As shown in Fig. 1: given a medical or health-related question and a single untrimmed Chinese medical instructional video, this track aims to locate the temporal answer (start and end time points) within the video.</li><!--li>Given the identity and audio signals of the speaker, participants are challenged to develop an algorithm to generate a video that can match the audio signals.</li-->
+                        <li ><b>Track 1. Multilingual Temporal Answer Grounding in Singe Video (mTAGSV): As shown in Fig. 1: given a medical or health-related question and a single untrimmed bilingual medical instructional video, this track aims to locate the temporal answer (start and end time points) within the video. We also provide both Chinese and English questions and captions for promote the multilingual methods.</li><!--li>Given the identity and audio signals of the speaker, participants are challenged to develop an algorithm to generate a video that can match the audio signals.</li-->
                 </ul>
                     <center><img src="./img_cmivqa/track2.png" width=90% style="margin-top: 15px"></center>
                     <div>
-<center><h6><br>Fig. 2: Illustration of Video Corpus Retrieval (VCR). </h6></center>
+<center><h6><br>Fig. 2: Multilingual Illustration of Video Corpus Retrieval (mVCR). </h6></center>
 </div>
                     <ul>
-                    <li><b>Track 2. Video Corpus Retrieval (VCR):</b> As shown in Fig. 2, given a medical or health-related question and a large collection of untrimmed Chinese medical instructional videos, this track aims to find the most relevant video corresponding to the given question in the video corpus.</li><!--li>Given the identity of the listener, and a corresponding talking head video & audio, participants are challenged to develop an algorithm to generate a video that can respond to the speaker's behaviors actively in real-time.</li-->
+                    <li><b>Track 2. Multilingual Video Corpus Retrieval (mVCR): As shown in Fig. 2, given a medical or health-related question and a large collection of untrimmed bilingual medical instructional videos, this track aims to find the most relevant video corresponding to the given question in the video corpus.</li-->
                    </ul>
                         <center> <img src="./img_cmivqa/track3.png" width=90% style="margin-top: 15px"></center>
                     <div>
-<center><h6><br>Fig. 3: Illustration of Temporal Answer Grounding in Video Corpus (TAGVC).</h6></center>
+<center><h6><br>Fig. 3: Illustration of Multilingual Temporal Answer Grounding in Video Corpus (mTAGVC).</h6></center>
 <ul>
-                    <li><b>Track 3. Temporal Answer Grounding in Video Corpus (TAGVC):</b> As shown in Fig. 3, given a text question and a large collection of untrimmed Chinese medical instructional videos, this track aims at finding the matching video answer span within the most relevant video corresponding to the given question in the video corpus.</li><!--li>Given the identity and audio signals of the speaker, participants are challenged to develop an algorithm to generate a video that can match the audio signals.</li-->
+                    <li><b>Track 3. Multilingual Temporal Answer Grounding in Video Corpus (mTAGVC): As shown in Fig. 3, given a text question and a large collection of untrimmed bilingual medical instructional videos, this track aims at finding the matching video answer span within the most relevant video corresponding to the given question in the video corpus.</li-->
                 </ul>
                     </p>
                     <!--
@@ -127,11 +127,11 @@
                     <div>
 <center><h6><br>Fig. 4 Dataset examples of the MMIVQA shared task.</h6></center>
                     <p class="card-text">
-                    The videos for this competition are crawled from the Chinese medical instructional channels on the YouTube website, where the subtitles (in Chinese) are transcribed from the corresponding video. The question and corresponding temporal answer are manually labeled by annotators with the medical background. Each video may contain several question-answer pairs, where each question corresponds to a unique answer. The dataset is split into a training set, a validation set, and a test set. During the competition, the test set along with the true “id” data number is not available to the public. The Fig. 4 shows the dataset examples for the CMIVQA shared task. The “id” is the sample number which is used for the video retrieval track. The “video_id” means the unique ID from YouTube. The “question” item is written manually by the medical experts. The “start and end second” represent the temporal answer from the corresponding video. As a result, our final goal is to retrieve the target video ID from the test corpus, and then locate the visual answer. More details about the dataset as well as the download links can be found in
+                    The videos for this competition are crawled from the medical instructional channels on the YouTube website, where the subtitles (Both in Chinese and English) are obtained from the corresponding video. The question and corresponding temporal answer are manually labeled by annotators with the medical background. Each video may contain several questions-answer pairs, where the questions with the same semantic meanings correspond to a unique answer. The dataset is split into a training set, a validation set, and a test set. During the grand challenge, the test set along with the true “id” data number is not available to the public. The Fig. 4 shows the dataset examples for the mTAGV task. The “id” is the sample number that is used for the video retrieval track. The “video_id” means the unique ID from YouTube. The “Chinese_question” item is written manually by Chinese medical experts. The “English_question” is translated and corrected by native English-speaking doctors. The “start and end second” represents the temporal answer from the corresponding video. We also provide the video captions automatically generated from the video, including Chinese (Ch_caption) and English (Eng_caption) versions. As a result, our final goal is to retrieve the target video ID from the test corpus, and then locate the visual answer. More details about the dataset as well as the download links can be found in
                     <a href="https://github.com/cmivqa/NLPCC-2023-Shared-Task-5">https://github.com/cmivqa/NLPCC-2023-Shared-Task-5</a>.
                         </br>
                         </br>
-                        Our baseline is released in <a href="https://github.com/cmivqa/NLPCC-2023-Shared-Task-5">https://github.com/WENGSYX/CMIVQA_Baseline</a>. Any original methods (language/vision/audio/mutlimodal etc.) are welcome.
+                        Our baseline is released in <a href="https://github.com/Lireanstar/ACMMM2024_MMIVQA">https://github.com/Lireanstar/ACMMM2024_MMIVQA</a>. Any original methods (language/vision/audio/mutlimodal etc.) are welcome.
                    </p>
 <!--                    <p>-->
 <!--                        <a data-toggle="collapse" href="#collapseExample">-->
@@ -378,8 +378,8 @@
                     <h5><b>Track 1</b></h5>
                     <ul>
 
-                     <li><b>Temporal Answer Grounding in Singe Video:</b><br/>
-                         We will evaluate the results using the metric calculation equation shown as follows. Specifically, we use (1) Intersection over Union (IoU), and (2) mIoU which is the average IoU over all testing samples. Following the previous work [3]-[5], we adopt “R@n, IoU = μ”, and “mIoU” as the evaluation metrics, which treat localization of the frames in the video as a span prediction task. The “R@n, IoU = μ” denotes the Intersection over Union (IoU) of the predicted temporal answer span compared with the ground truth span, where the overlapping part is larger than “μ” in top-n retrieved moments. The “mIoU” is the average IoU over the samples. In our experiments, we use n = 1 and μ ∈ {0.3, 0.5, 0.7} to evaluate the TAGSV results.                      $$
+                     <li><b>Multilingual Temporal Answer Grounding in Singe Video:</b><br/>
+                         We will evaluate the results using the metric calculation equation shown as follows. Specifically, we use (1) Intersection over Union (IoU), and (2) mIoU which is the average IoU over all testing samples. Following the previous work [3]-[5], we adopt “R@n, IoU = μ”, and “mIoU” as the evaluation metrics, which treat localization of the frames in the video as a span prediction task. The “R@n, IoU = μ” denotes the Intersection over Union (IoU) of the predicted temporal answer span compared with the ground truth span, where the overlapping part is larger than “μ” in top-n retrieved moments. The “mIoU” is the average IoU over the samples. In our experiments, we use n = 1 and μ ∈ {0.3, 0.5, 0.7} to evaluate the mTAGSV results.                      $$
                     \begin{aligned}
                      \mathrm{IOU} & =\frac{A \cap B}{A \cup B}  \\
                     \mathrm{mIOU} & =\left(\sum_{i=1}^N \mathrm{IOU}\right) / N
@@ -389,7 +389,7 @@
                     <b>Note:</b> The main ranking of this track is based on the mIoU score, and other metrics in this track are also provided for further analysis.</li>
                                             </ul>
                         <h5><b>Track 2</b></h5>
-                                        <ul><li><b>Video Corpus Retrieval:</b><br/>
+                                        <ul><li><b>Multilingual Video Corpus Retrieval:</b><br/>
                     Following the pioneering work [6], we adopt the video retrieval metric like “R@n”. Specifically, we adopt the n=1, 10, and 50 to denote the recall performance of the video retrieval. The Mean Reciprocal Rank (MRR) score to evaluate the Chinese medical instructional video corpus retrieval track, which can be calculated as follows.
                     $$
                     M R R=\frac{1}{|V|} \sum_{i=1}^{|V|} \frac{1}{\operatorname{Rank}_i}
@@ -402,7 +402,7 @@
                         where the |<i>M</i>| is the number of the evaluation metrics. Value<sub>i</sub> is the i-th metric in the above metrics (R@1, R@10, R@50 and MRR), |<i>M</i>|=4.
                     </li>                    </ul>
                     <h5><b>Track 3</b></h5>
-                     <ul><li><b>Temporal Answer Grounding in Video Corpus:</b><br/>
+                     <ul><li><b>Multilingual Temporal Answer Grounding in Video Corpus:</b><br/>
                          We kept the Intersection over Union (IoU) metric similar to the Track 1 and the retrieval indexes “R@n, n=1/10/50” and MRR similar to Track 2 for further analysis. The “R@n, IoU = 0.3/0.5/0.7” is still used, where we assign the n = 1, 10, 50 for evaluation. The index of mean IoU in video retrieval subtask, i.e., “R@1/10/50|mIOU”, is also adopted for measuring the average level of participating model’s performance.
 
                     <br/><b>Note:</b> The main ranking of this track is based on the Average score. The Average score is calculated by averaging the R@1|mIoU, R@10|mIoU, R@50|mIoU scores, which is shown as follows.
