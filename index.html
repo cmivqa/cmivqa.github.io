@@ -37,7 +37,7 @@
                 <li class="nav-item"><a class="nav-link" href="#award">Award</a></li>
                 <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
                 <li class="nav-item"><a class="nav-link" href="#reference">Reference</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="./leaderboard.html">Leaderboard2023</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="./leaderboard.html">Leaderboard2024</a></li>
                 <!-- <li class="nav-item"><a class="nav-link" href="./leaderboardb.html">LeaderboardB</a></li> -->
 <!--                TODO leaderboard-->
             </ul>
@@ -45,7 +45,7 @@
 <!--                <li class="nav-item"><a class="nav-link" href="https://project.mhzhou.com/vico/">Full Dataset</a></li>-->
 <!--                <li class="nav-item"><a class="nav-link" href="https://arxiv.org/abs/2112.13548">Paper</a></li>-->
                 <li class="nav-item"><a class="nav-link" href="https://github.com/Lireanstar/NLPCC2024_MMIVQA">Code</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/WENGSYX/CMIVQA_Baseline">Baseline</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/WENGSYX/MMIVQA_Baseline">Baseline</a></li>
             </ul>
         </div>
         </div>
@@ -132,10 +132,12 @@
 <center><h6><br>Fig. 4 Dataset examples of the MMIVQA shared task.</h6></center>
                     <p class="card-text">
                     The videos for this competition are crawled from the medical instructional channels on the YouTube website, where the subtitles (Both in Chinese and English) are obtained from the corresponding video. The question and corresponding temporal answer are manually labeled by annotators with the medical background. Each video may contain several questions-answer pairs, where the questions with the same semantic meanings correspond to a unique answer. The dataset is split into a training set, a validation set, and a test set. During the grand challenge, the test set along with the true “id” data number is not available to the public. The Fig. 4 shows the dataset examples for the mTAGV task. The “id” is the sample number that is used for the video retrieval track. The “video_id” means the unique ID from YouTube. The “Chinese_question” item is written manually by Chinese medical experts. The “English_question” is translated and corrected by native English-speaking doctors. The “start and end second” represents the temporal answer from the corresponding video. We also provide the video captions automatically generated from the video, including Chinese (Ch_caption) and English (Eng_caption) versions. As a result, our final goal is to retrieve the target video ID from the test corpus, and then locate the visual answer. More details about the dataset as well as the download links can be found in
-                    <a href="https://github.com/Lireanstar/NLPCC2024_MMIVQA">https://github.com/Lireanstar/NLPCC2024_MMIVQA</a>.
+                    <a href="https://github.com/WENGSYX/MMIVQA_Baseline">https://github.com/Lireanstar/NLPCC2024_MMIVQA</a>.
                         </br>
                         </br>
-                        Our baseline method will be released in <a href="https://github.com/Lireanstar/NLPCC2024_MMIVQA">https://github.com/WENGSYX/CMIVQA_Baseline</a>. Any original methods (language/vision/audio/multimodal etc.) are welcome.
+                        Our baseline method will be released in <a href="https://github.com/WENGSYX/MMIVQA_Baseline">https://github.com/WENGSYX/CMIVQA_Baseline</a>. 
+                        </br>
+                        Any original methods (language/vision/audio/multimodal etc.) are welcome.
                    </p>
 <!--                    <p>-->
 <!--                        <a data-toggle="collapse" href="#collapseExample">-->
@@ -214,6 +216,7 @@
 <!--                        <strong>Train+Valid+Test Set:</strong> <a href="https://1drv.ms/u/s!Ag220j2nXkVswCSUXjTP_cA3Y0y2?e=9b3VXA" target="_blank">OneDrive</a><br/>-->
                         <strong>Train Set:</strong> <a href="https://pan.baidu.com/s/1eN_mo3iHyyHVH_8dciElqA?pwd=9871">BaiduNetDisk</a> <br/>
                         <strong>Dev Set:</strong> <a href="https://pan.baidu.com/s/1G1u-nnOm50_d3cl-vcqimQ?pwd=9871">BaiduNetDisk</a> <br/>
+                         <strong>Test Set:</strong> <a href="https://pan.baidu.com/s/15WCJmm3MgB6b8HFKIki8ag?pwd=9871">BaiduNetDisk</a> <br/>                       
                         <!-- <strong>Train & Validation Set:</strong> <a href="https://pan.baidu.com/s/1eN_mo3iHyyHVH_8dciElqA?pwd=9871">BaiduNetDisk</a> | <a href="https://drive.google.com/drive/folders/1QbY8DEaVLkY2w6vOCWAs4ZQFHgJ3q8ui?usp=sharing">GoogleDrive</a><br/> -->
 
 <!--                         <strong>Test Set A:</strong> <a href="https://pan.baidu.com/s/1XxoQ-KwUy9qf3Z0RfaPTaw?pwd=9874">BaiduNetDisk</a> | <a href="https://drive.google.com/drive/folders/1Fdll0Qn8Ol65Z91u51NOEpBoxAQlrXN4?usp=sharing">GoogleDrive</a> <br/> -->
@@ -258,15 +261,7 @@
                             <td>7.26</td>
                             <td>242.4</td>
                         </tr>
-                        <tr>
-                            <td>Test Set</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
+
 <!--                         <tr>
                             <td>Test A</td>
                             <td>200</td>
@@ -275,14 +270,15 @@
                             <td>17.81</td>
                             <td>242.4</td>
                         </tr> -->
-<!--                         <tr>
-                            <td>Test B</td>
+                        <tr>
+                            <td>Test Set</td>
                             <td>200</td>
-                            <td>511</td>
+                            <td>1022</td>
                             <td>2234</td>
-                            <td>17.48</td>
+                            <td>18.22</td>     
+                            <td>7.44</td>
                             <td>310.9</td>
-                        </tr> -->
+                        </tr>
                         </tbody>
             </table>
                     </center>
@@ -454,7 +450,7 @@
 <!--                            <li><strong>lip landmark distance</strong>: L1 distance of lip landmarks</li>-->
                         </ul>
                         Scripts can be accessed from <a href="https://github.com/Lireanstar/NLPCC2024_MMIVQA" target="_blank">this github repo</a>.
-                        Baseline can be accessed from <a href="https://github.com/WENGSYX/CMIVQA_Baseline" target="_blank">this github repo</a>.
+                        Baseline can be accessed from <a href="https://github.com/WENGSYX/MMIVQA_Baseline" target="_blank">this github repo</a>.
                     </p>
                 </div>
             </div>
